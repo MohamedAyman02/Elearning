@@ -1,0 +1,135 @@
+.course-management {
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.course-management h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.course-management .course-form {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.course-management button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 12px 24px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.course-management button:hover {
+  background-color: #0056b3;
+}
+
+.course-management table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.course-management thead {
+  background-color: #e9ecef;
+}
+
+.course-management th,
+.course-management td {
+  text-align: left;
+  padding: 14px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.course-management th {
+  font-size: 16px;
+  color: #495057;
+  font-weight: 600;
+}
+
+.course-management tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.course-management td {
+  color: #343a40;
+}
+
+.course-management .buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.course-management .edit {
+  background-color: #28a745;
+  color: white;
+}
+
+.course-management .edit:hover {
+  background-color: #218838;
+}
+
+.course-management .archive {
+  background-color: #ffc107;
+  color: white;
+}
+
+.course-management .archive:hover {
+  background-color: #e0a800;
+}
+
+.course-management .delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.course-management .delete:hover {
+  background-color: #c82333;
+}
+
+.course-management .active-status {
+  color: #28a745;
+  font-weight: bold;
+  padding: 4px 8px;
+  background-color: #e9f7ef;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.course-management .inactive-status {
+  color: #dc3545;
+  font-weight: bold;
+  padding: 4px 8px;
+  background-color: #f8d7da;
+  border-radius: 4px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .course-management table {
+    font-size: 12px;
+  }
+
+  .course-management th, .course-management td {
+    padding: 10px;
+  }
+
+  .course-management .buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

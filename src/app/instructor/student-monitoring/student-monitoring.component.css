@@ -1,0 +1,126 @@
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.course-selector {
+  margin-bottom: 30px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dropdown:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.students-section {
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 22px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.students-table thead {
+  background-color: #e9ecef;
+}
+
+.students-table th {
+  text-align: left;
+  padding: 12px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.students-table td {
+  padding: 12px;
+  font-size: 14px;
+  color: #555;
+  border-bottom: 1px solid #ddd;
+}
+
+.students-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.progress-bar {
+  width: 70%;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #e9ecef;
+  margin-right: 10px;
+}
+
+.progress-bar::-webkit-progress-bar {
+  background-color: #e9ecef;
+  border-radius: 6px;
+}
+
+.progress-bar::-webkit-progress-value {
+  background-color: #28a745;
+  border-radius: 6px;
+}
+
+.no-students {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.no-students p {
+  font-size: 16px;
+  color: #6c757d;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .students-table th,
+  .students-table td {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .progress-bar {
+    width: 100%;
+  }
+}

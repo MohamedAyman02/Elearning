@@ -1,0 +1,107 @@
+.edit-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.edit-container h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.edit-container .edit-form {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.edit-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-container form div {
+  margin-bottom: 20px;
+}
+
+.edit-container label {
+  font-size: 16px;
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.edit-container input,
+.edit-container textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edit-container input:focus,
+.edit-container textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.edit-container textarea {
+  resize: none;
+  height: 150px;
+}
+
+.edit-container button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-container button:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}
+
+.edit-container button:active {
+  background-color: #004080;
+  transform: scale(0.98);
+}
+
+.edit-container p {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .edit-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .edit-container h2 {
+    font-size: 24px;
+  }
+
+  .edit-container button {
+    width: 100%;
+    text-align: center;
+  }
+}

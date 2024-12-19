@@ -1,0 +1,118 @@
+.contain {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  color: #0d5094;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.metadata p {
+  font-size: 14px;
+  color: #333;
+}
+
+.metadata strong {
+  font-weight: bold;
+  color: #0d5094;
+}
+
+.materials h3, .assessments h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 14px;
+  color: #555;
+  padding: 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+.assessments ul li {
+  font-weight: 600;
+  color: #0d5094;
+}
+
+.course-details {
+  padding: 20px;
+}
+
+.course-details h1 {
+  font-size: 32px;
+  color: #0d5094;
+}
+
+.course-details p {
+  font-size: 16px;
+  color: #333;
+}
+
+.course-details .metadata p {
+  margin-top: 10px;
+  color: #555;
+}
+
+.course-details .materials ul {
+  padding-left: 20px;
+}
+
+.course-details .assessments ul {
+  padding-left: 20px;
+}
+
+.course-details .no-course {
+  text-align: center;
+  color: #d9534f;
+  font-size: 18px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .contain {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .metadata p, .materials h3, .assessments h3 {
+    font-size: 14px;
+  }
+
+  ul li {
+    font-size: 12px;
+  }
+}

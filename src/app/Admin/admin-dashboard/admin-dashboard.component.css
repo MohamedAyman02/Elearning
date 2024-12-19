@@ -1,0 +1,124 @@
+/* Navbar Styling */
+.navbar {
+  background-color: #16003e;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ecf0f1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li {
+  margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .cyan a {
+  background-color: #1abc9c;
+}
+
+.navbar .cyan a:hover {
+  background-color: #16a085;
+}
+
+.navbar .red a {
+  background-color: #e74c3c;
+}
+
+.navbar .red a:hover {
+  background-color: #c0392b;
+}
+
+.navbar .nav-links li a:hover {
+  color: #fff;
+}
+
+/* Welcome Container */
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  color: #ecf0f1;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Welcome Message Styling */
+.animated-text {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+  animation: slideIn 1.5s ease-out, glow 2s infinite alternate;
+}
+
+/* User ID Highlight */
+.animated-text span {
+  color: #f39c12; /* Golden text */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Loading Text */
+.animated-text span.loading {
+  font-style: italic;
+  color: #95a5a6; /* Grey for loading */
+  animation: blink 1.5s infinite;
+}
+
+/* Keyframes for Animations */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
